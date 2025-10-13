@@ -1,0 +1,205 @@
+---
+title: "If I were to build a Password and Authentication policy"
+datePublished: Mon Oct 13 2025 05:00:41 GMT+0000 (Coordinated Universal Time)
+cuid: cmgoo0bdv000302l2btb27ews
+slug: if-i-were-to-build-a-password-and-authentication-policy
+tags: authentication, security, passwords, cybersecurity, security-policy
+
+---
+
+Also this includes MFA by the way. Let’s go
+
+To many users passwords or rather the process of coming up with passwords can be daunting , with many nuances such as ; passwords that are actually easy to remember while being complex enough to meet requirements and in some cases being a bit diverse from other passwords they have used in the past. It sometimes can be the point where users say fuck it and type in passwords like **Roblox1234!** which would meet the complexity requirements but somehow can easily be breached . Also a lot of users come up with obvious passwords, as there is the misconception that no one except them would guess it , **password**, **Winnipeg** , SCREAMING . Here are things I would consider and possibly work with.
+
+A guide to perfect passwords is typically anything which is not found in [`Scott Linux’s`](https://web.archive.org/web/20200501154512/https://gist.github.com/scottlinux/9a3b11257ac575e4f71de811322ce6b3) list and also regularly checking [`HaveIbeenPawned`](https://haveibeenpwned.com/Passwords) and while this may look good on paper it isn’t always feasible depending on the number of your security or IT team , and the level of projects there is , so automation would probably been my first thought of action but let us get into it shall we.
+
+---
+
+## Password and Authentication Policy
+
+<s>Afukam</s> Security
+
+Effective date 2025-10-12
+
+Last reviewed: 2025-09-12
+
+Owner : IT / Security department
+
+## Definitions
+
+**Application Administration Account:** Any account used for the administration of an application (e.g., SQL database administrator).
+
+**Password:** A string of characters that serves as authentication of a person’s identity, used to grant or deny access to private or shared data.
+
+**Strong Password:** A password that is not easily guessed. It is constructed of a sequence of characters, numbers, and special characters. Typically, the longer the password, the stronger it is. It should never be a name, dictionary word in any language, acronym, proper name, number, or be linked to personal information such as a birth date, Social Security Number, or family name.
+
+**Multi-Factor Authentication (MFA):** An authentication method that requires users to provide two or more verification factors to gain access to a resource.
+
+**Single Sign-On (SSO):** An authentication process that allows a user to access multiple applications with one set of login credentials.
+
+## Purpose
+
+Password and Authentication Policy establishes requirements for creating, managing, and protecting passwords and authentication methods used to access company systems, applications, and data. It is designed to implement [`NIST 800-63B`](https://pages.nist.gov/800-63-4/sp800-63b.html) , [`ISO/IEC 27002:2022`](https://www.iso.org/standard/75652.html) , and [`SANS Password security construction`](https://sansorg.egnyte.com/dl/XpoE0oCRh6) .
+
+## Scope
+
+This policy applies to :
+
+* This guideline applies to employees, contractors, consultants, temporary and other workers, including all personnel affiliated with third parties.
+    
+* This guideline applies to all passwords including but not limited to user-level accounts, system-level accounts, web accounts, e-mail accounts, screen saver protection, voicemail, and local router logins.
+    
+
+## Policy
+
+### User Network Passwords
+
+* Passwords must be changed every **90 days**.
+    
+* Passwords must have a **minimum length of 14 characters**.
+    
+* Passwords must contain a combination of **alphabetic, numeric, and special characters** (!@#$%^&\*\_+=?/~’;’,&lt;&gt;|).
+    
+* Passwords must not be based on personal information (e.g., username, nickname, SSN, birth date, etc.).
+    
+* Passwords cannot be reused for **at least 1 year**.
+    
+* Passwords must not be dictionary words or acronyms.
+    
+
+### System-Level Passwords
+
+* All system-level passwords must be changed at least every **6 months**.
+    
+* Administrators must not circumvent this policy for ease of use.
+    
+* Administrator accounts must use passwords with a minimum of **16 characters**, containing at least three of the following: uppercase, lowercase, numbers, and special characters (!@#$%^&\*\_+=?/~’;’,&lt;&gt;|).
+    
+
+Non-expiring passwords must be documented and adhere to administrator-level standards.
+
+### Password Protection
+
+* The same password must not be used for multiple accounts.
+    
+* Passwords must not be shared with anyone.
+    
+* Stored passwords must be **encrypted**.
+    
+* Passwords must not be transmitted via email, chat, or disclosed over the phone.
+    
+* Password hints or clues must not reveal the format of the password.
+    
+* Passwords must not be written down or stored in plain text.
+    
+* Passwords must not be stored on devices without encryption.
+    
+* If the security of an account is in question, the password must be changed immediately.
+    
+* Users must not circumvent password entry using auto-logon, application remembering, embedded scripts, or hard-coded passwords (exceptions must be approved by IT).
+    
+* Workstations must not be left unattended without a password-protected screen saver or lock.
+    
+    ### Authentication Methods
+    
+    * All accounts used to access <s>Afukam</s> resources must use **strong authentication mechanisms**.
+        
+    * **Multi-Factor Authentication (MFA)** is required for:
+        
+        * Email and collaboration platforms
+            
+        * VPN and remote access
+            
+        * Privileged accounts and administrative consoles
+            
+        * Cloud infrastructure and SaaS tools
+            
+        * Any system containing sensitive data
+            
+    * MFA methods should include:
+        
+        * Authentication apps (e.g., Google Authenticator, Okta Verify, Duo Mobile)
+            
+        * Hardware security keys (e.g., YubiKey, Encoded USB drives)
+            
+        * Push notification via trusted identity provider
+            
+    * SMS-based MFA may only be used as a **backup**.
+        
+    
+    ### Session Security
+    
+    * All systems must enforce **automatic session timeouts** or screen locks after 10–15 minutes of inactivity.
+        
+    * Users must manually lock their devices when stepping away.
+        
+    * Re-authentication is required for accessing sensitive resources or escalating privileges.
+        
+    
+    ### Service Accounts and API Authentication
+    
+    * Service accounts must use **strong, unique credentials** and be secured in an approved **secrets management system**.
+        
+    * API integrations must use OAuth2 tokens, API keys with expiration, or certificates.
+        
+    * Hard-coding passwords or API keys in scripts or source code is prohibited.
+        
+    * Service account credentials must be rotated at least every **180 days** or immediately upon compromise.
+        
+    
+    ### Account and Access Control
+    
+    * All accounts must be **unique to individuals**. Shared accounts are prohibited unless explicitly approved.
+        
+    * Default vendor accounts must be disabled or changed before deployment.
+        
+    * Privileged accounts must:
+        
+        * Be used only for administrative tasks.
+            
+        * Be protected by MFA.
+            
+        * Not be used for daily activities such as email or browsing.
+            
+    * Access must be revoked immediately upon termination or role change.
+        
+
+### Password-less and Advanced Authentication
+
+* Where supported, <s>Afukam</s> may implement **password-less authentication** (e.g., FIDO2, WebAuthn, Passkeys).
+    
+* Password-less solutions must provide equal or greater security than MFA.
+    
+* Any new authentication method must be reviewed and approved by the security team.
+    
+    ### Enforcement
+    
+    * Failure to comply with this policy may result in:
+        
+        * Suspension of system access
+            
+        * Mandatory security training
+            
+        * Disciplinary action up to and including termination
+            
+    * The IT/Security team may disable or reset accounts in the event of suspected compromise.
+        
+    
+    ## Review and Revision
+    
+    This policy will be reviewed annually or upon significant changes to <s>Afukam’s</s> identity and access infrastructure. All revisions must be approved by the Information Security Lead or CISO.
+    
+
+---
+
+## Related Policies
+
+* `Acceptable Use Policy`
+    
+* [`Email Security Policy`](https://afukamwrites.hashnode.dev/if-i-were-to-build-an-email-security-policy)
+    
+* `Data Classification and Protection Policy`
+    
+* `Security Awareness & Training Policy`
+    
+* `Incident Response Policy`
