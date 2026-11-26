@@ -1,56 +1,55 @@
 # Cybersecurity Projects
 
-A curated index of my hands-on cybersecurity labs, investigations, and security tools. The work focuses on **security operations, SIEM monitoring, threat analysis, network security, and Python-based security tooling**.
+A curated index of hands-on cybersecurity labs, investigations, security tools, and public-facing security education. This portfolio is organized by the skills each project explores.
 
-This repository is the starting point for exploring my cybersecurity portfolio. Individual projects may have their own repositories; this page groups them by the skill area they demonstrate.
+**Primary interests:** security operations, SIEM, threat hunting, malware analysis, network security, and security automation.
 
-## Project Directory
+## 1. Security Operations & SIEM
 
-### 1. SIEM & Security Operations
+Work involving telemetry collection, SIEM platforms, log analysis, alerting, and security monitoring.
 
-Projects involving log collection, security monitoring, SIEM searches, dashboards, and alerting.
+- **[SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series)** — Elastic and Splunk learning labs with walkthroughs and supporting evidence.
+- **[AWS Cowrie + Wazuh SIEM Lab — project journal](https://github.com/Afukam/What-s-going-on-in-Afukam-s-head/blob/main/AWS-Cowrie-Wazuh-SIEM-Lab.md)** — current multi-phase AWS honeypot and SIEM project. Wazuh deployment and agent onboarding are underway; Cowrie event ingestion and detections remain to be validated and completed.
 
-- **[SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series)** — supporting material and documentation for my Elastic and Splunk SIEM labs.
-
-### 2. Malware Analysis & Threat Research
+## 2. Malware Analysis & Threat Research
 
 Work focused on examining suspicious files or scripts, understanding potentially malicious behaviour, and documenting analysis.
 
 - **[Malware Analysis](https://github.com/Afukam/Malware-Analysis)** — malware-analysis learning project and supporting material.
 
-### 3. Network Security & Scanning
+## 3. Network Security & Vulnerability Assessment
 
-Projects involving network discovery, service enumeration, and security assessment with Nmap.
+Projects involving network discovery, service enumeration, and security assessment in controlled environments.
 
-- **[Christiania](https://github.com/Afukam/Christiania)** — Python-based network scanning and vulnerability-assessment tool.
-- **[Pius](https://github.com/Afukam/Pius)** — a Python command-line wrapper for Nmap.
+- **[Christiania](https://github.com/Afukam/Christiania)** — Python-based Nmap scanning and vulnerability-assessment project.
+- **[Pius](https://github.com/Afukam/Pius)** — small Python command-line utility for running Nmap scans.
+- **[Beginner Network Pentesting](https://github.com/Afukam/Beginner-Network-Pentesting)** — beginner network penetration-testing exercises.
 
-### 4. Python Security Tools
+## 4. Security Automation & Python
 
-A collection of Python projects and utilities developed while learning security automation and scripting.
+- **[Python for Security](https://github.com/Afukam/Python-4-security-)** — collection of Python tools developed while learning security scripting and automation.
 
-- **[Python for Security](https://github.com/Afukam/Python-4-security-)** — collection of Python security tools.
+## 5. Security Awareness & People-Focused Cybersecurity
 
-## Technical Writing
+Security writing that translates technical risks into practical guidance for everyday users.
 
-Some projects are accompanied by longer walkthroughs and explanations:
+- **[People-Focused Cybersecurity Projects](https://github.com/Afukam/people-focused-cybersecurity-projects)** — awareness articles and resources on phishing, email security, OSINT, and personal security practices.
+- [Hashnode](https://afukamwrites.hashnode.dev/) — technical walkthroughs and lab documentation.
+- [Medium](https://medium.com/@afukam) — security awareness writing and investigation walkthroughs.
 
-- [Hashnode — Cybersecurity with Chances of Afukam](https://afukamwrites.hashnode.dev/)
-- [Medium](https://medium.com/@afukam)
+## How to Evaluate a Project
 
-## How to Read These Projects
+Each substantial project should document:
 
-Each project should explain:
-
-1. **Objective** — the problem or security question being explored.
+1. **Objective and scope** — what question or problem is being explored.
 2. **Environment** — tools, operating systems, and lab setup.
-3. **Method** — steps, commands, queries, or analysis approach.
-4. **Evidence** — relevant screenshots, sanitized logs, output, or code.
-5. **Findings** — what the investigation or exercise demonstrated.
-6. **Limitations & next steps** — what remains incomplete and how the work could be improved.
+3. **Method** — commands, searches, queries, or analysis steps.
+4. **Evidence** — sanitized screenshots, logs, output, or code.
+5. **Findings** — what was observed and what it means.
+6. **Limitations and next steps** — what remains incomplete.
 
-> These are independent learning projects and lab exercises. Their scope and results are described in each repository; they should not be interpreted as production security assessments.
+> These are independent learning projects and lab exercises. Their scope and results are described in each repository; they are not presented as production security assessments.
 
 ## About
 
-I'm an Applied Computer Science student interested in security operations, SIEM, threat hunting, malware analysis, and security automation. I use these projects to build practical skills and communicate technical findings clearly.
+I'm an Applied Computer Science student building practical experience in security operations, SIEM monitoring, threat analysis, network security, and security automation. I use these projects to develop technical skills and communicate findings clearly.
