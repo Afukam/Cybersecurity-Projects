@@ -4,8 +4,8 @@ This index connects my public writing to the practical topics represented in my 
 
 ## SIEM & Security Monitoring
 
-- [SIEM Lab 1 — Elastic](https://afukamwrites.hashnode.dev/siem-lab-1) — Elastic deployment, endpoint telemetry, event searches, visualizations, and a basic alerting exercise. Related: [SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series).
-- [SIEM Lab 2 — Splunk](https://afukamwrites.hashnode.dev/siem-lab-2) — Splunk Enterprise, Universal Forwarder, log ingestion, searches, reports, and dashboards. Related: [SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series).
+- [SIEM Lab 1 — Elastic](https://afukamwrites.hashnode.dev/siem-lab-1) — Elastic deployment, endpoint telemetry, event searches, visualizations, and a basic alerting exercise. Related: [SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series) · [evidence-reviewed Elastic report](https://github.com/Afukam/SIEM-lab-series/blob/main/SIEM%201/LAB-REPORT.md).
+- [SIEM Lab 2 — Splunk](https://afukamwrites.hashnode.dev/siem-lab-2) — Splunk Enterprise, Universal Forwarder, log-ingestion workflow, and introductory SIEM work. Related: [SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series) · [evidence-reviewed Splunk report](https://github.com/Afukam/SIEM-lab-series/blob/main/SIEM%202/LAB-REPORT.md).
 - [SIEM 101](https://afukamwrites.hashnode.dev/siem-101) — foundational SIEM concepts.
 
 ## SOC Investigations & Alert Triage
@@ -18,7 +18,7 @@ This index connects my public writing to the practical topics represented in my 
 
 - [Malware 101](https://afukamwrites.hashnode.dev/malware-101) — introductory malware concepts. Related: [Malware Analysis](https://github.com/Afukam/Malware-Analysis).
 - [Email Analysis 101](https://afukamwrites.hashnode.dev/email-analysis-101) — foundational email analysis.
-- [SOC114 — Malicious Attachment Detected](https://afukamwrites.hashnode.dev/soc114-malicious-attachment-detected-letsdefend-3ccf7268a49d) — simulated attachment investigation.
+- [SOC114 — Malicious Attachment Detected](https://afukamwrites.hashnode.dev/soc114-malicious-attachment-detected-letsdefend-3ccf7268a49d) — simulated attachment investigation. Related: [suspicious email attachment triage — evidence-reviewed report](https://github.com/Afukam/Malware-Analysis/blob/main/EMAIL-ATTACHMENT-TRIAGE-REPORT.md).
 
 ## Security Awareness & Policy
 
