@@ -1,20 +1,24 @@
 # Cybersecurity Projects
 
-A curated index of hands-on cybersecurity labs, investigations, security tools, and public-facing security education. Projects are grouped by the skills they explore, with related technical writing linked where possible.
+A curated index of hands-on cybersecurity labs, investigations, security tools, and public-facing security education. Projects are grouped by the skills they explore, with related technical writing and evidence-reviewed reports linked where possible.
 
 **Primary interests:** security operations, SIEM, threat hunting, malware analysis, network security, and security automation.
 
 ## 1. Security Operations & SIEM
 
-- **[SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series)** — Elastic and Splunk learning labs with walkthroughs and supporting evidence.
+- **[SIEM Lab Series](https://github.com/Afukam/SIEM-lab-series)** — Elastic and Splunk learning labs with walkthroughs and supporting screenshots.
+  - [Elastic SIEM evidence-reviewed report](https://github.com/Afukam/SIEM-lab-series/blob/main/SIEM%201/LAB-REPORT.md) — endpoint telemetry, visualizations, Nmap rule configuration, and validation gaps.
+  - [Splunk evidence-reviewed report](https://github.com/Afukam/SIEM-lab-series/blob/main/SIEM%202/LAB-REPORT.md) — installation, Universal Forwarder setup attempts, data collection workflow, and ingestion/search gaps.
+  - [Detection validation template](https://github.com/Afukam/SIEM-lab-series/blob/main/DETECTION-VALIDATION-TEMPLATE.md) — structured record for detection logic, test evidence, false positives, and limitations.
 - **[AWS Cowrie + Wazuh SIEM Lab](https://github.com/Afukam/What-s-going-on-in-Afukam-s-head/blob/main/AWS-Cowrie-Wazuh-SIEM-Lab.md)** — current multi-phase AWS honeypot and SIEM project. Wazuh dashboard access and agent onboarding are established; Cowrie event ingestion, detections, and final validation remain in progress.
 - **[Troubleshooting log](https://github.com/Afukam/What-s-going-on-in-Afukam-s-head/blob/main/TROUBLESHOOTING-LOG.md)** — practical obstacles, diagnostic commands, findings, and unresolved checks from the Cowrie/Wazuh build.
-- **[Detection validation template](https://github.com/Afukam/SIEM-lab-series/blob/main/DETECTION-VALIDATION-TEMPLATE.md)** — structured record for detection logic, test evidence, false positives, and limitations.
 - **[SOC investigation case-study template](./SOC-INVESTIGATION-TEMPLATE.md)** — reusable format for alert triage, evidence timelines, ATT&CK mapping, and conclusions.
 
 ## 2. Malware Analysis & Threat Research
 
-- **[Malware Analysis](https://github.com/Afukam/Malware-Analysis)** — malware-analysis learning material and related SOC/email investigation writing, with a [structured investigation report template](https://github.com/Afukam/Malware-Analysis/blob/main/INVESTIGATION-REPORT-TEMPLATE.md).
+- **[Malware Analysis](https://github.com/Afukam/Malware-Analysis)** — malware-analysis learning material and related SOC/email investigation writing.
+  - [Suspicious email attachment triage — evidence-reviewed report](https://github.com/Afukam/Malware-Analysis/blob/main/EMAIL-ATTACHMENT-TRIAGE-REPORT.md) — records the visible email, reputation-tool, and sandbox process-tree observations, with limitations.
+  - [Investigation report template](https://github.com/Afukam/Malware-Analysis/blob/main/INVESTIGATION-REPORT-TEMPLATE.md) — structured reporting for scope, methodology, indicators, confidence, ATT&CK mapping, and recommendations.
 
 ## 3. Network Security & Vulnerability Assessment
 
